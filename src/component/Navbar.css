@@ -1,0 +1,76 @@
+.card-img{
+    border-radius: 6rem;
+    width: 90%;
+    
+}
+.card-body{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+.heading{
+    padding: 5rem;
+    
+}
+.heading h4{
+    text-align: center;
+}
+.heading h1{
+    text-align: center;
+    font-size: 3rem;
+}
+.card-title{
+    text-align: center;
+    color: #731C64;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.filter-btns{
+    text-align: center;
+}
+.filter-btn{
+    background: none;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 10px 30px;
+    font-size: 16px;
+    color:black ;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+.filter-btn::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 2px;
+    width: 0;
+    background-color: #731C64;
+    transition: all 0.2s ease-in-out;
+}
+
+.filter-btn:hover{
+    color: #731C64;
+}
+.filter-btn:hover::after{
+    width: 100%;
+}
+
+.active-btn{
+    color: #c454b1;
+}
+.active-btn::after{
+    width: 100%;
+}
+
+.product-img{
+    
+}
