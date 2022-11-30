@@ -5,23 +5,28 @@ import Menu from './Menu';
 
 const Product = () => {
 
-    const [products, setProducts] = useState(Menu);
-    console.log(products);
+    const [products, setProducts] = useState([]);
+    const [category, setCategory] = useState([]);
 
-    // useEffect(() => {
-    //     fetch('items.json')
-    //         .then(res => res.json())
-    //         .then(data => setProducts(data));
-    // }, [])
+ 
 
+    useEffect(() => {
+        fetch('items.json')
+            .then(res => res.json())
+            .then(data => setProducts(data));
+    }, [])
+
+   
+console.log(products);
     const filterItem = (cateItem) => {
-        const updateItem = Menu.filter((curElem) => {
-        
-            return curElem.category === cateItem
-           
+        const updateItem = products.filter((curElem) => {
 
-        });       
-         setProducts(updateItem);
+            return curElem.category === cateItem
+
+
+        });
+        cateItem === 'all' ? setCategory(products): setCategory(updateItem)
+
         //  console.log(updateItem);
 
     }
@@ -36,7 +41,7 @@ const Product = () => {
 
 
             <div className='filter-btns'>
-                <button className='active-btn filter-btn ' onClick={() => setProducts(Menu)}>All</button>
+                <button className='active-btn filter-btn ' onClick={() => filterItem('all')}>All</button>
                 <button className=' filter-btn' onClick={() => filterItem('new')}>New</button>
                 <button className=' filter-btn' onClick={() => filterItem('bestseller')}>Best Sellers</button>
                 <button className=' filter-btn' onClick={() => filterItem('featured')}>Featured</button>
@@ -49,11 +54,25 @@ const Product = () => {
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 px-24'>
 
                 {
-                    products.map(product => <ProductCard
-                        key={product.id}
-                        product={product}
-                    ></ProductCard>)
+                    category.length ? category.map(product => {
+                        return (
+                            <ProductCard
+                                key={product.id}
+                                product={product}
+                            >
+                            </ProductCard>
+                        )
+                    }) : products.map(product => {
+                        return (
+                            <ProductCard
+                                key={product.id}
+                                product={product}
+                            >
+                            </ProductCard>
+                        )
+                    })
                 }
+
 
 
             </div>
