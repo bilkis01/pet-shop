@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from './Banner';
+import Deal from './Deal';
 import Pet from './Pet';
 import PetOff from './PetOff';
 import Product from './Product';
@@ -13,6 +14,7 @@ const Home = () => {
            <PetOff></PetOff>
            <Product></Product>
            <ProductsDeal></ProductsDeal>
+           <Deal></Deal>
         </div>
     );
 };
