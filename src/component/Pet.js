@@ -12,7 +12,7 @@ const Pet = () => {
         
        <div>
             <div className='heading bg-accent'>
-                <h4 className='text-primary font-bold'>TRENDING CATEGORIES </h4>
+                <h4 className='text-primary tracking-wider'>TRENDING CATEGORIES </h4>
                 <h1 className='text-neutral'>Shop By Category</h1>
 
             </div>

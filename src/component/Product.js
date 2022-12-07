@@ -34,7 +34,7 @@ const Product = () => {
     return (
         <div>
             <div className='heading '>
-                <h4 className='text-primary font-bold'>BEST PRODUCT</h4>
+                <h4 className='text-primary tracking-wider'>BEST PRODUCT</h4>
                 <h1 className='text-black'>New Collection</h1>
 
             </div>
