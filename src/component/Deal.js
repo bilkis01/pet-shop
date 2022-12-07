@@ -8,7 +8,7 @@ const Deal = () => {
 
         <div className='py-36 text-center  bg-accent'>
             <p className='text-primary  tracking-wider'>TRENDING PRODUCT</p>
-            <p className='text-neutral font-bold text-5xl'>Deal Of The Day</p>
+            <p className='text-neutral  text-5xl'>Deal Of The Day</p>
 
             <div className='grid grid-cols-1 lg:grid-cols-2 px-12  py-14 gap-5 '>
                 <PetDeal img={foodfoure} head="Joutes Douffle Bag" price="$20.19" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. "></PetDeal>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from './Banner';
 import BestProduct from './BestProduct';
+import Blog from './Blog';
 import Deal from './Deal';
 import Pet from './Pet';
 import PetOff from './PetOff';
@@ -17,6 +18,7 @@ const Home = () => {
            <ProductsDeal></ProductsDeal>
            <Deal></Deal>
            <BestProduct></BestProduct>
+           <Blog></Blog>
         </div>
     );
 };

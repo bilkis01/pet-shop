@@ -35,7 +35,7 @@ const Product = () => {
         <div>
             <div className='heading '>
                 <h4 className='text-primary tracking-wider'>BEST PRODUCT</h4>
-                <h1 className='text-black'>New Collection</h1>
+                <h1 className=''>New Collection</h1>
 
             </div>
 
