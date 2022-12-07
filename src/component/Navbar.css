@@ -1,37 +1,42 @@
-.card-img{
+.card-img {
     border-radius: 6rem;
     width: 90%;
-    
+
 }
-.card-body{
+
+.card-body {
     text-align: center;
     font-size: 1.3rem;
     font-weight: bold;
 }
 
 
-.heading{
+.heading {
     padding: 5rem;
-    
+
 }
-.heading h4{
+
+.heading h4 {
     text-align: center;
 }
-.heading h1{
+
+.heading h1 {
     text-align: center;
     font-size: 3rem;
 }
-.card-title{
+
+.card-title {
     text-align: center;
     color: #731C64;
     font-size: 1.3rem;
     font-weight: bold;
 }
 
-.filter-btns{
+.filter-btns {
     text-align: center;
 }
-.filter-btn{
+
+.filter-btn {
     background: none;
     cursor: pointer;
     border: none;
@@ -39,13 +44,14 @@
     display: inline-block;
     margin: 10px 30px;
     font-size: 16px;
-    color:black ;
+    color: black;
     font-weight: 600;
     letter-spacing: 2px;
     position: relative;
     /* transition: all 0.2s ease-in-out; */
 }
-.filter-btn::after{
+
+.filter-btn::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -57,26 +63,27 @@
     transition: all 0.2s ease-in-out;
 }
 
-.filter-btn:hover{
+.filter-btn:hover {
     color: #731C64;
 }
-.filter-btn:hover::after{
+
+.filter-btn:hover::after {
     width: 100%;
 }
 
-.active-btn{
+.active-btn {
     color: #c454b1;
 }
-.active-btn::after{
+
+.active-btn::after {
     width: 100%;
 }
 
-.product-img{
-    
-}
+.product-img {}
+
 /* product deal */
 
-.purple{
+.purple {
     background: #731C64;
     max-width: 100%;
     height: 340px;
@@ -86,24 +93,31 @@
     justify-content: center;
     align-items: center;
 }
-.purple-img{
+
+.purple-img {
     width: 450px;
 }
-.text-one{
+
+.text-one {
     font-size: 1.5rem;
     font-weight: bold;
-   letter-spacing: 5px;
+    letter-spacing: 5px;
 }
-.text-two{
+
+.text-two {
     font-size: 2.5rem;
-    color:White;
- font-weight: 700;
+    color: White;
+    font-weight: 700;
 }
-.cat-img{
+
+.cat-img {
     width: 200px;
 }
 
-/*  */
-.bg{
-    background-color: #FFFFFF;
+/* Footer */
+
+.footer {
+    background: #474654;
+    max-width: 100%;
+    height: 400px;
 }

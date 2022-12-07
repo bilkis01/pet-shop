@@ -3,6 +3,7 @@ import Banner from './Banner';
 import BestProduct from './BestProduct';
 import Blog from './Blog';
 import Deal from './Deal';
+import Footer from './Footer';
 import Pet from './Pet';
 import PetOff from './PetOff';
 import Product from './Product';
@@ -19,6 +20,7 @@ const Home = () => {
            <Deal></Deal>
            <BestProduct></BestProduct>
            <Blog></Blog>
+           <Footer></Footer>
         </div>
     );
 };
