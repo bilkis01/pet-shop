@@ -9,8 +9,6 @@ const PetCard = ({ img , pet}) => {
             <div class="card card-img border-dashed border-2 border-primary">
 
                 <img class="" src={img} alt="" />
-              
-
 
             </div>
               <div className="card-body">

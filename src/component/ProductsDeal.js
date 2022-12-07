@@ -8,7 +8,7 @@ const ProductsDeal = () => {
         <div className='purple '>
             <img src={small} className="purple-img" alt="" />
             <div className='text-center'>
-                <p className='text-yellow-400 py-5 text-one'>SAVE 50% OFF</p>
+                <p className='text-yellow-300 py-5 text-one'>SAVE 50% OFF</p>
                 <p className='text-two'>BEST DEAL OFFER</p>
                 <p className='text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Maxime a cumque magnam fugit tempore soluta.</p>
