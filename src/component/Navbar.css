@@ -43,7 +43,7 @@
     font-weight: 600;
     letter-spacing: 2px;
     position: relative;
-    transition: all 0.2s ease-in-out;
+    /* transition: all 0.2s ease-in-out; */
 }
 .filter-btn::after{
     content: "";
@@ -73,4 +73,32 @@
 
 .product-img{
     
+}
+/* product deal */
+
+.purple{
+    background: #731C64;
+    max-width: 100%;
+    height: 340px;
+    padding: 15px;
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.purple-img{
+    width: 450px;
+}
+.text-one{
+    font-size: 1.5rem;
+    font-weight: bold;
+   letter-spacing: 5px;
+}
+.text-two{
+    font-size: 2.5rem;
+    color: beige;
+ font-weight: 700;
+}
+.cat-img{
+    width: 200px;
 }

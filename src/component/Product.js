@@ -8,7 +8,7 @@ const Product = () => {
     const [products, setProducts] = useState([]);
     const [category, setCategory] = useState([]);
 
- 
+
 
     useEffect(() => {
         fetch('items.json')
@@ -16,8 +16,8 @@ const Product = () => {
             .then(data => setProducts(data));
     }, [])
 
-   
-console.log(products);
+    // console.log(products);
+    
     const filterItem = (cateItem) => {
         const updateItem = products.filter((curElem) => {
 
@@ -25,7 +25,7 @@ console.log(products);
 
 
         });
-        cateItem === 'all' ? setCategory(products): setCategory(updateItem)
+        cateItem === 'all' ? setCategory(products) : setCategory(updateItem)
 
         //  console.log(updateItem);
 
