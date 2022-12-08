@@ -1,3 +1,13 @@
+/* navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+
 .card-img {
     border-radius: 6rem;
     width: 90%;
@@ -119,5 +129,5 @@
 .footer {
     background: #474654;
     max-width: 100%;
-    height: 400px;
+    height: 100%;
 }

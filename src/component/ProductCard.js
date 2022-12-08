@@ -4,7 +4,7 @@ import './Navbar.css';
 
 const ProductCard = ({ product }) => {
 
-    const {id, asset, name, price } = product;
+    const {_id, asset, name, price } = product;
 
     return (
 
@@ -16,7 +16,7 @@ const ProductCard = ({ product }) => {
                 <h2 class="text-center text-primary text-xl">{name}</h2>
                     <h4>{price}</h4>
                     <div class="card-actions  justify-center">
-                    <Link className='btn bg-primary text-white' to={`/productdetails/${id}`}>PURCHASE</Link>
+                    <Link className='btn bg-primary text-white' to={`/productdetails/${_id}`}>PURCHASE</Link>
                     </div>
                 </div>
 

@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 import ProductCard from './ProductCard';
-import Menu from './Menu';
+
 
 const Product = () => {
 
     const [products, setProducts] = useState([]);
     const [category, setCategory] = useState([]);
-
-
+    // console.log(products);
 
     useEffect(() => {
-        fetch('items.json')
+        fetch('http://localhost:5000/product')
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [])
@@ -27,7 +26,7 @@ const Product = () => {
         });
         cateItem === 'all' ? setCategory(products) : setCategory(updateItem)
 
-        //  console.log(updateItem);
+        //  console.log(category);
 
     }
 
@@ -57,7 +56,7 @@ const Product = () => {
                     category.length ? category.map(product => {
                         return (
                             <ProductCard
-                                key={product.id}
+                                key={product._id}
                                 product={product}
                             >
                             </ProductCard>
@@ -65,7 +64,7 @@ const Product = () => {
                     }) : products.map(product => {
                         return (
                             <ProductCard
-                                key={product.id}
+                                key={product._id}
                                 product={product}
                             >
                             </ProductCard>
@@ -82,3 +81,5 @@ const Product = () => {
 };
 
 export default Product;
+
+

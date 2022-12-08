@@ -4,7 +4,7 @@ import './Navbar.css';
 const Footer = () => {
     return (
         <div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 px-24 py-6 footer'>
+            <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 px-12 py-6 footer'>
             <div className='about py-20'>
                 <h2 className='text-white text-3xl '>About Us</h2>
                 <br />
@@ -48,6 +48,7 @@ const Footer = () => {
        
 
         </div>
+        <hr />
         <p className='bg-neutral text-white text-center'>© 2022 Tuime. Made with  &#128151; by Maheabilkis.</p>
         </div>
     );
