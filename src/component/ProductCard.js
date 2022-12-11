@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product,addToCart }) => {
 
     const {_id, asset, name, price } = product;
 
@@ -17,6 +17,7 @@ const ProductCard = ({ product }) => {
                     <h4>{price}</h4>
                     <div class="card-actions  justify-center">
                     <Link className='btn bg-primary text-white' to={`/productdetails/${_id}`}>PURCHASE</Link>
+                    
                     </div>
                 </div>
 

@@ -46,10 +46,11 @@ const Navbar = () => {
                     </label>
                     <div tabindex="0" class="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
                         <div class="card-body">
-                            <span class="font-bold text-lg">8 Items</span>
-                            <span class="text-info">Subtotal: $999</span>
+                            <span class="font-bold text-lg"></span>
+                           <button className='btn btn-secondary'>View Cart</button>
                             <div class="card-actions">
-                                <button class="btn btn-secondary btn-block">View cart</button>
+                            {/* <Link className='btn bg-primary btn-block text-white font-bold' to={`/cartview/${id}`}>View Cart</Link> */}
+                              
                             </div>
                         </div>
                     </div>

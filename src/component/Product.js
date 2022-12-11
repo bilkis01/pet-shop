@@ -30,6 +30,7 @@ const Product = () => {
 
     }
 
+ 
     return (
         <div>
             <div className='heading '>
@@ -58,6 +59,7 @@ const Product = () => {
                             <ProductCard
                                 key={product._id}
                                 product={product}
+                            
                             >
                             </ProductCard>
                         )
