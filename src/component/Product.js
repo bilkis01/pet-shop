@@ -16,7 +16,7 @@ const Product = () => {
     }, [])
 
     // console.log(products);
-    
+
     const filterItem = (cateItem) => {
         const updateItem = products.filter((curElem) => {
 
@@ -30,7 +30,7 @@ const Product = () => {
 
     }
 
- 
+
     return (
         <div>
             <div className='heading '>
@@ -59,7 +59,7 @@ const Product = () => {
                             <ProductCard
                                 key={product._id}
                                 product={product}
-                            
+
                             >
                             </ProductCard>
                         )

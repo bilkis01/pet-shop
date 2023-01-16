@@ -131,3 +131,18 @@
     max-width: 100%;
     height: 100%;
 }
+.dogmama{
+    width: 100%;
+}
+
+/* Testimonial */
+.card-body p{
+    font-weight: 400;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+.card-body h2{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+

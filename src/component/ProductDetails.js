@@ -67,32 +67,32 @@ const ProductDetails = () => {
 
 
   return (
-   <div>
-    <Cart cart={cart}></Cart>
-     <div class="hero min-h-screen ">
-      <div class="hero-content flex-col px-14 lg:flex-row">
-        <img src="https://placeimg.com/260/400/arch" class="max-w-sm rounded-lg shadow-2xl" />
-        <div>
-        
-          <h3 class="text-5xl ">{product.name}</h3>
-          <h3 class="text-xl font-bold ">{product.price}</h3>
-          <br />
+    <div>
+      <Cart cart={cart}></Cart>
+      <div class="hero min-h-screen ">
+        <div class="hero-content flex-col px-14 lg:flex-row">
+          <img src="https://placeimg.com/260/400/arch" class="max-w-sm rounded-lg shadow-2xl" />
+          <div>
 
-          <hr /><hr /><hr />
-          <hr />
-          <p class="py-4">{product.details}</p>
+            <h3 class="text-5xl ">{product.name}</h3>
+            <h3 class="text-xl font-bold ">{product.price}</h3>
+            <br />
 
-          <p className='text-fuchsia-900'> SKU: {product.SKU}</p>
-          <p className='text-fuchsia-900'> Tags: {product.Tags}</p>
-          <p className='text-fuchsia-900'> Category: {product.category}</p>
-          <br />
+            <hr /><hr /><hr />
+            <hr />
+            <p class="py-4">{product.details}</p>
 
-          <button class="btn btn-secondary" onClick={() => addToCart(product)}>Add to Cart </button>
+            <p className='text-fuchsia-900'> SKU: {product.SKU}</p>
+            <p className='text-fuchsia-900'> Tags: {product.Tags}</p>
+            <p className='text-fuchsia-900'> Category: {product.category}</p>
+            <br />
+
+            <button class="btn btn-secondary" onClick={() => addToCart(product)}>Add to Cart </button>
+          </div>
         </div>
       </div>
+
     </div>
-  
-   </div>
   );
 };
 
